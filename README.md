@@ -1,98 +1,106 @@
-# datafun-04-eda Summer 1 - module 4
+# datafun-04-eda Summer 1 - Module 4
 
-## CheatSheet: Managing Virtual Environment
+## 1. Virtual Environment Management (Windows PowerShell)
 
-For **Windows PowerShell** (adjust commands if using Mac/Linux):
-
-1. **Create a virtual environment**:
+1. **Create a virtual environment**
    ```powershell
    py -m venv .venv
    ```
 
-2. Activate the virtual environment:
-
+2. **Activate the virtual environment**
    ```powershell
    .\.venv\Scripts\activate
    ```
 
-3. Upgrade pip, setuptools, and wheel:
-
+3. **Upgrade pip, setuptools, and wheel**
    ```powershell
    py -m pip install --upgrade pip setuptools wheel
    ```
 
-4. Install required packages:
-
+4. **Install required packages**
    ```powershell
    py -m pip install --upgrade -r requirements.txt
    ```
 
-## CheatSheet: Running Python Scripts
+---
 
-Remember to activate your `.venv` (and install packages if they haven't been installed yet) before running files. Verify that all external packages imported into a file are included in `requirements.txt` (and have NOT been commented out).
+## 2. Running Python Scripts
 
-Run Python scripts using the following commands:
+- Activate your `.venv` and ensure all required packages are installed.
+- Verify all external packages in your scripts are listed in `requirements.txt`.
 
-   ```powershell
-   py demo_script.py
-   py do_stats.py
-   py draw_chart.py
-   py greet_user.py
-   ```
+**Run Python scripts:**
+```powershell
+py demo_script.py
+py do_stats.py
+py draw_chart.py
+py greet_user.py
+```
 
-## Every Work Session
+---
 
-Many projects span several days. When starting work again, remember to:
+## 3. Repeatable Workflow Checklist
 
-   <https://github.com/denisecase/pro-analytics-01/tree/main/03-repeatable-workflow>
+When resuming work on your project, follow these steps:
 
-   01-git-pull-before-changes.md
-   02-activate-virtual-environment.md
-   03-install-dependencies.md
-   04a-activate-and-run-python-script.md
-   05-modify-and-test.md
-   06-git-add-commit-push.md
+1. [Pull latest changes](https://github.com/denisecase/pro-analytics-01/tree/main/03-repeatable-workflow)
+2. Activate virtual environment
+3. Install dependencies
+4. Run Python scripts
+5. Modify and test code
+6. Add, commit, and push changes to Git
 
-## CheatSheet: Git Add-Commit-Push
+---
 
-Use the following commands to add, commit, and push changes to Git:
+## 4. Git Add-Commit-Push CheatSheet
 
-   ```powershell
-   git clone https://github.com/youraccount/yourrepo
-   git add .
-   git commit -m "custom message"
-   git push -u origin main
-   git pull origin main
-   git push
-   ```
+```powershell
+git clone https://github.com/youraccount/yourrepo
+git add .
+git commit -m "custom message"
+git push -u origin main
+git pull origin main
+git push
+```
 
-## P4 Exploratory Data Analysis
+---
 
-Step 1. Initial Title, Header, and Imports (pandas, seaborn, matplotlib and Axes from matplotlib.axes)
-Step 2. Load Data (Iris dataset for classification and basic data task)
-Step 3. Initial Data Inspection
-Step 4. Initial Descriptive Statistics
-Step 5. Initial Data Distribution for Numerical Columns
-Step 5. Initial Data Distribution for Categorical Columns
-Step 6. Initial Data Transformation and Feature Engineering
-Step 7. Initial Visualizations
-Step 8. Initial Insights
-Step 9. Annotate Your Notebook for Storytelling and Presentation
+## 5. P4 Exploratory Data Analysis (EDA) Notebook Structure
 
-Checklist
-    Notebook has exactly one Markdown title (with a single hash).
-    Notebook has useful Markdown header cell with author and purpose, and optionally, the date.
-    Notebook uses numbered second level Markdown headings for organization.
-    Notebook has numbered sections with useful content for:
-        1. Imports
-        2. Load Data
-        3. Initial Data Inspection
-        4. Initial Descriptive Statistics
-        5. Initial Data Distribution for Numerical Columns
-        6. Initial Data Transformation and Feature Engineering
-        7. Initial Visualizations
-        8. Initial Insights
-    Notebook includes commentary as we go that tells a unique data story.
-    Notebook includes unique insights into the dataset.
-    Code and visuals are working, notebook is fully executed and on display in GitHub.
+### Steps
+
+1. **Initial Title, Header, and Imports**  
+   *(pandas, seaborn, matplotlib, and Axes from matplotlib.axes)*
+2. **Load Data**  
+   *(Iris dataset for classification and basic data task)*
+3. **Initial Data Inspection**
+4. **Initial Descriptive Statistics**
+5. **Initial Data Distribution for Numerical Columns**
+6. **Initial Data Distribution for Categorical Columns**
+7. **Initial Data Transformation and Feature Engineering**
+8. **Initial Visualizations**
+9. **Initial Insights**
+10. **Annotate Your Notebook for Storytelling and Presentation**
+
+---
+
+### Notebook Checklist
+
+- [ ] Exactly one Markdown title (with a single hash)
+- [ ] Useful Markdown header cell with author, purpose, and optionally, the date
+- [ ] Numbered second-level Markdown headings for organization
+- [ ] Numbered sections with useful content for:
+    1. Imports
+    2. Load Data
+    3. Initial Data Inspection
+    4. Initial Descriptive Statistics
+    5. Initial Data Distribution for Numerical Columns
+    6. Initial Data Transformation and Feature Engineering
+    7. Initial Visualizations
+    8. Initial Insights
+- [ ] Commentary throughout that tells a unique data story
+- [ ] Unique insights into the dataset
+- [ ] Code and visuals are working, notebook is fully executed and viewable on GitHub
+
+---
 
