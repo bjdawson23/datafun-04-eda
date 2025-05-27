@@ -66,4 +66,33 @@ Use the following commands to add, commit, and push changes to Git:
    git push
    ```
 
-## P4
+## P4 Exploratory Data Analysis
+
+Step 1. Initial Title, Header, and Imports (pandas, seaborn, matplotlib and Axes from matplotlib.axes)
+Step 2. Load Data (Iris dataset for classification and basic data task)
+Step 3. Initial Data Inspection
+Step 4. Initial Descriptive Statistics
+Step 5. Initial Data Distribution for Numerical Columns
+Step 5. Initial Data Distribution for Categorical Columns
+Step 6. Initial Data Transformation and Feature Engineering
+Step 7. Initial Visualizations
+Step 8. Initial Insights
+Step 9. Annotate Your Notebook for Storytelling and Presentation
+
+Checklist
+    Notebook has exactly one Markdown title (with a single hash).
+    Notebook has useful Markdown header cell with author and purpose, and optionally, the date.
+    Notebook uses numbered second level Markdown headings for organization.
+    Notebook has numbered sections with useful content for:
+        1. Imports
+        2. Load Data
+        3. Initial Data Inspection
+        4. Initial Descriptive Statistics
+        5. Initial Data Distribution for Numerical Columns
+        6. Initial Data Transformation and Feature Engineering
+        7. Initial Visualizations
+        8. Initial Insights
+    Notebook includes commentary as we go that tells a unique data story.
+    Notebook includes unique insights into the dataset.
+    Code and visuals are working, notebook is fully executed and on display in GitHub.
+
