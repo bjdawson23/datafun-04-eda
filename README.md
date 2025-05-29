@@ -65,31 +65,56 @@ git push
 
 ---
 
-## 5. P4 Exploratory Data Analysis (EDA) Notebook Structure
+## P4 Exploratory Data Analysis (EDA) Notebook Structure
 
-### Steps
+### Steps and Notebook Check
 
 1. **Initial Title, Header, and Imports**  
-   *(pandas, seaborn, matplotlib, and Axes from matplotlib.axes)*
+   *(author, purpose, date.  imports: pandas, seaborn, matplotlib, and Axes from matplotlib.axes)*
 2. **Load Data**  
-   *(Iris dataset for classification and basic data task)*
+   *(loaded the Iris dataset for classification and basic data task)*
 3. **Initial Data Inspection**
+   *(checked the dataset's format, size, and the type of information each column)
 4. **Initial Descriptive Statistics**
+   (summary statistics for numerical columns)
 5. **Initial Data Distribution for Numerical Columns**
-6. **Initial Data Distribution for Categorical Columns**
-7. **Initial Data Transformation and Feature Engineering**
-8. **Initial Visualizations**
-9. **Initial Insights**
-10. **Annotate Your Notebook for Storytelling and Presentation**
+   **Initial Data Distribution for Categorical Columns**
+   (Sepal length and width appear to have a normal distribution. Petal length and width looks to have some abnormal distribution or missing data)
+   The distribution of each species is each at 50 per species.
+6. **Initial Data Transformation and Feature Engineering**
+   (Used pandas to clean and transform data; Added sepal area and petal area columns)
+7. **Initial Visualizations**
+   (Used matplotlib to show pairplot's.  Added a scatter plot to show two numerical variable.)
+8. **Initial Insights**
+   - **No Missing Data:** The Iris dataset contains no missing values, so no imputation was necessary.
+   - **No Duplicates:** There were no duplicate rows after cleaning.
+   - **Balanced Classes:** Each species (setosa, versicolor, virginica) is equally represented with 50 samples each.
+   - **Numeric Distributions:** Sepal length and width are approximately normally distributed, while petal length and width show more variation and separation between species.
+   - **Feature Engineering:** New features `sepal_area` and `petal_area` were created, which may help in distinguishing between species.
+   - **Relationships:** Pairplots and scatter plots show clear separation between species, especially in petal measurements. Setosa is easily separable from the other two species.
+   - **Categorical Optimization:** The `species` column was converted to a categorical type for efficiency.
+   - **Potential for Classification:** The clear separation in feature space suggests that simple classification models could perform well on this dataset.
+9. **Annotate Your Notebook for Storytelling and Presentation**
+
+- **Clear Structure:** The notebook is organized into logical steps, starting from data loading, inspection, cleaning, transformation, visualization, and ending with insights. This helps guide the reader through the EDA process.
+- **Descriptive Markdown:** Each section begins with a markdown cell that describes the purpose of the step, making it easy for readers to follow the analysis.
+- **Code Comments:** Python code cells include comments explaining what each line does, which helps both beginners and experienced readers understand the workflow.
+- **Visual Aids:** Plots and charts are included to visually communicate the distribution of features and relationships between variables, supporting the narrative with visual evidence.
+- **Insights and Interpretation:** After each major analysis step, markdown cells summarize findings and interpret results, connecting the data to potential next steps or business questions.
+- **Reproducibility:** The notebook uses standard libraries and loads data in a way that others can easily reproduce the analysis.
+- **Storytelling Flow:** The notebook tells a story: it starts with a question (exploring the Iris dataset), investigates the data, cleans and transforms it, visualizes key patterns, and ends with actionable insights.
+- **Next Steps:** The notebook is ready for further analysis, such as building classification models, based on the clear separation between species found in the EDA.
+
+> **Tip:** For presentations, consider hiding code cells and focusing on markdown explanations and visualizations to make the story accessible to non-technical audiences.
 
 ---
 
 ### Notebook Checklist
 
-- [ ] Exactly one Markdown title (with a single hash)
-- [ ] Useful Markdown header cell with author, purpose, and optionally, the date
-- [ ] Numbered second-level Markdown headings for organization
-- [ ] Numbered sections with useful content for:
+- [x] Exactly one Markdown title (with a single hash)
+- [x] Useful Markdown header cell with author, purpose, and optionally, the date
+- [x] Numbered second-level Markdown headings for organization
+- [x] Numbered sections with useful content for:
     1. Imports
     2. Load Data
     3. Initial Data Inspection
@@ -98,9 +123,8 @@ git push
     6. Initial Data Transformation and Feature Engineering
     7. Initial Visualizations
     8. Initial Insights
-- [ ] Commentary throughout that tells a unique data story
-- [ ] Unique insights into the dataset
-- [ ] Code and visuals are working, notebook is fully executed and viewable on GitHub
+- [x] Commentary throughout that tells a unique data story
+- [x] Unique insights into the dataset
+- [x] Code and visuals are working, notebook is fully executed and viewable on GitHub
 
 ---
-
